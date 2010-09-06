@@ -1,3 +1,7 @@
+<?=$crudContato->getAdd();?>
+
+<?php
+/*
 <div class="contatos form">
 <?php echo $this->Form->create('Contato');?>
 	<fieldset>
@@ -39,4 +43,4 @@
 		<li><?php echo $this->Html->link(__('List Projetos', true), array('controller' => 'projetos', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Projeto', true), array('controller' => 'projetos', 'action' => 'add')); ?> </li>
 	</ul>
-</div>
+</div>*/?>

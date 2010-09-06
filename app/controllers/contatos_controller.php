@@ -2,21 +2,21 @@
 class ContatosController extends AppController {
 
 	var $name = 'Contatos';
+	var $components = array('CrudContato');
+	var $helpers = array('CrudContato');
 
 	function index() {
 		$this->Contato->recursive = 0;
 		$this->set('contatos', $this->paginate());
 	}
 
-	function view($id = null) {
-		if (!$id) {
-			$this->Session->setFlash(__('Invalid contato', true));
-			$this->redirect(array('action' => 'index'));
-		}
-		$this->set('contato', $this->Contato->read(null, $id));
+	function view($id = null)
+	{
+		$this->CrudContato->setView($id);
 	}
 
-	function add() {
+
+/*	function add() {
 		if (!empty($this->data)) {
 			$this->Contato->create();
 			if ($this->Contato->save($this->data)) {
@@ -29,6 +29,11 @@ class ContatosController extends AppController {
 		$users = $this->Contato->User->find('list');
 		$projetos = $this->Contato->Projeto->find('list');
 		$this->set(compact('users', 'projetos'));
+	}*/
+
+	function add()
+	{
+		$this->CrudContato->setAdd();
 	}
 
 	function edit($id = null) {

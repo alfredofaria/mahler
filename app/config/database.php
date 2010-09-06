@@ -77,9 +77,9 @@ class DATABASE_CONFIG {
 		'driver' => 'mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'port' => '/tmp/mysql.sock',
+		'port' => '3306',
 		'login' => 'root',
-		'password' => 'afmysql',
+		'password' => '',
 		'database' => 'mahler',
 		'prefix' => '',
 	);

@@ -1,4 +1,7 @@
-<div class="contatos view">
+<?=$crudContato->getView();?>
+<?php
+
+/*<div class="contatos view">
 <h2><?php  __('Contato');?></h2>
 	<dl><?php $i = 0; $class = ' class="altrow"';?>
 		<dt<?php if ($i % 2 == 0) echo $class;?>><?php __('Id'); ?></dt>
@@ -187,4 +190,5 @@
 			<li><?php echo $this->Html->link(__('New Projeto', true), array('controller' => 'projetos', 'action' => 'add'));?> </li>
 		</ul>
 	</div>
-</div>
+</div> */
+?>
